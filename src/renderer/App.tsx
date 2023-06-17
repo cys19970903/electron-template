@@ -1,9 +1,5 @@
 function App() {
-  return (
-    <div>
-      <h3>This is custom React app!</h3>
-    </div>
-  );
+  return <p>Hello electron!</p>;
 }
 
 export default App;
