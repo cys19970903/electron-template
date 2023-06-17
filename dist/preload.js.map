@@ -1,0 +1,1 @@
+{"version":3,"file":"preload.js","mappings":";;;;;AAAA;AACA,gF","sources":["webpack://electron-template/./src/main/preload.ts"],"sourcesContent":["// See the Electron documentation for details on how to use preload scripts:\n// https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts\n"],"names":[],"sourceRoot":""}

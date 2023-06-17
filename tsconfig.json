@@ -1,23 +1,33 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "allowJs": true,
-    "module": "commonjs",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "baseUrl": "./",
-    "outDir": "dist",
-    "types": ["@types/node"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "typeRoots": [],
+    "types": ["@types/node"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
     "jsx": "react-jsx",
     "paths": {
-      "*": ["node_modules/*"],
       "@/*": ["src/*"]
     }
   },
-  "include": ["./src/**/*", ".eslintrc.cjs", "./config/**/*", "forge.config.ts"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["./src/**/*", "./config/**/*", "./builder.ts", ".eslintrc.cjs", "tsconfig.json"],
   "exclude": ["node_modules"]
 }
